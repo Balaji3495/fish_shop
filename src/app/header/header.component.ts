@@ -7,6 +7,9 @@ import * as $ from "jquery";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  sticky: any;
+  scroll: any;
+  menubar: boolean=false;
 
   constructor() { }
   scrollDistance: any;
@@ -61,12 +64,13 @@ $(window).scroll(function() {
       }
      
   });
-  obj.elementPosition = $('.header-search').offset();
-  if( obj.scrollDistance> obj.elementPosition.top){
-    $('.header-search').css('position','fixed').css('top','0');
-} else {
-  $('.header-search').css('position','static');
-}
+  
+//   obj.elementPosition = $('.header-search').offset();
+//   if( obj.scrollDistance> obj.elementPosition.top){
+//     $('.header-search').css('position','fixed').css('top','0');
+// } else {
+//  // $('.header-search').css('position','static');
+// }
 }).scroll();
 // obj.elementPosition = $('.header-search').offset();
 
@@ -79,7 +83,34 @@ $(window).scroll(function() {
 //             $('.header-search').css('position','static');
 //         }    
 // });
+
+
+
+$(window).on('wheel', function(event){
+// $(window).mousewheel(function(){
+  
+  obj.sticky = $('.header-search'),
+     obj.scroll = $(window).scrollTop();
+
+  if (obj.scroll > -100) 
+  {
+   // $(".header-search").css( {"position":'fixed'});
+    obj.sticky.addClass('fixed');
+
+  }
+  else {
+    alert("anu");
+    obj.sticky.removeClass('fixed');
+  }
+});
+
 }
-
-
+showData()
+{
+  this.menubar=true;
+}
+closeData()
+{
+  this.menubar=false;
+}
 }

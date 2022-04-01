@@ -12,7 +12,7 @@
                             <div class="menu-type-main-container">
                                 <div class="menu-type-chip-container ">
                                     <div class="menu-option dfr md-text12 md-f500">
-                                        <span>kickup</span><i class="fa fa-angle-down md-pl8"></i>
+                                        <span>pickup</span><i class="fa fa-angle-down md-pl8"></i>
                                     </div>
                                 </div>
                             </div>
@@ -1381,7 +1381,11 @@
                                                     Ketchup</span></div>
                                         </div>
                                     </div>
-
+                                    <div class="md-pb30">
+                                        <div class="product-img-wrap"
+                                            style="background-image: url(&quot;../../assets/food-img/img23.webp&quot;); display: flex; place-items: center;">
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="best-sell-items-inner-container">
                                     <div class="top-item-details-container">
@@ -1422,6 +1426,11 @@
                                                     Portions</span><span
                                                     class="md-text12 md-pc store-itm read-more-cta">Read More</span>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="md-pb30">
+                                        <div class="product-img-wrap"
+                                            style="background-image: url(&quot;../../assets/food-img/img23.webp&quot;); display: flex; place-items: center;">
                                         </div>
                                     </div>
                                 </div>
@@ -1472,6 +1481,7 @@
                                     </div>
                                 </div>
                             </div>
+                           
                         </div>
                         <div class="all-categories"></div>
                         <div class="menu-category-items-wrap cat-top-item" style="">
@@ -2820,7 +2830,7 @@
                     </div>
                 </div>
                 <div class="footer-container ">
-                    <div class="new-footer-container  extra-space">
+                    <!-- <div class="new-footer-container  extra-space">
                         <div class="footer-wrapper md-pb32">
                             <div class="footer-heading md-text18 md-f700">Butterheads</div>
                             <div class="store-address-wrapper md-pt32">
@@ -2847,9 +2857,10 @@
                                         src="//cdn.dotpe.in/cfe/image/copyright.svg" class="md-mr4"> 2022 DotPe</span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+                    <div *ngIf="menubar" class="nav-menu-wrapper "><div class="menuBg"></div><div class="nav-link  expand "><div><div class="nav-menu-modal"><div class="nav-menu"><div class="menu-list-wrapper "><ul class="menu-list"><li id="menu-recommended-item-1">Recommended</li><li id="menu-element-scroll-214647">Salads</li><li id="menu-element-scroll-427717">Snac-kit</li><li id="menu-element-scroll-214648">Wholesome Bowls</li><li id="menu-element-scroll-400484">BH Deli</li><li id="menu-element-scroll-214649">Smoothies</li></ul></div><img (click)="closeData()" class="nav-menu-close  " src="//cdn.dotpe.in/cfe/image/ic-close.svg" alt=""></div></div></div></div></div>
                 </div>
-                <div class="nav-menu-wrapper ">
+                <div class="nav-menu-wrapper " (click)="showData()">
                     <div class="menu-view-icon primary-cta "><i class="fa fa-bars" aria-hidden="true"></i>
                         <div>Menu</div>
                     </div>
@@ -2857,10 +2868,26 @@
             </div>
         </div>
         <div class="mobile-promotion-difference" style=""></div>
-        <div class="webiste-catalog-cart-view">
+        <div   class="webiste-catalog-cart-view">
             <div class="empty-cart-heading"><span class="empty-cart-text md-text20 md-f500">Your Cart Empty</span><img
                     class="empty-cart" src="//cdn.dotpe.in/cfe/image/web-cart-gray.png" alt=""></div>
         </div>
     </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 </div>

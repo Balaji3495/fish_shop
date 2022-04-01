@@ -530,8 +530,12 @@ text-align: center;
 
 
 
-
+.header-search
+{
+  visibility: hidden;
+}
 @media screen and (min-width: 768px) {
+ 
   .webiste-catalog-cart-view {
     min-width: 356px;
     max-width: 356px;
@@ -646,7 +650,10 @@ text-align: center;
   .webiste-catalog-cart-view {
     display: none;
   }
-
+  .header-search
+  {
+    visibility: visible;
+  }
 }
 .website-menu-wrapper {
   display: flex;
