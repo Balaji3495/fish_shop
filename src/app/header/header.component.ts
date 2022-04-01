@@ -12,6 +12,8 @@ export class HeaderComponent implements OnInit {
   scrollDistance: any;
   target: any;
   use:any;
+  elementPosition:any;
+  scrollDist:any;
   ngOnInit(): void {
     let obj =this;
     var x = 0;
@@ -27,20 +29,24 @@ export class HeaderComponent implements OnInit {
 
 
 $(document).ready(function() {
-  $('a[href*=#]').bind('click', function(e) {
-      e.preventDefault(); // prevent hard jump, the default behavior
+  
+  // $('a[href*=#]').bind('click', function(e) {
+  //   alert("i");
+  //     e.preventDefault(); // prevent hard jump, the default behavior
 
-      obj.target = $(this).attr("href"); // Set the target as variable
+  //     obj.target = $(this).attr("href"); // Set the target as variable
 
-      // perform animated scrolling by getting top-position of target-element and set it as scroll target
-      $('html, body').stop().animate({
-          scrollTop: obj.target.offset().top
-      }, 600, function() {
-          location.hash = obj.target; //attach the hash (#jumptarget) to the pageurl
-      });
+  //     // perform animated scrolling by getting top-position of target-element and set it as scroll target
+  //     $('html, body').stop().animate({
+  //         scrollTop: obj.target.offset().top
+  //     }, 600, function() {
+  //         location.hash = obj.target; //attach the hash (#jumptarget) to the pageurl
+  //     });
 
-      return false;
-  });
+  //     return false;
+  // });
+
+  
 });
 
 
@@ -48,11 +54,32 @@ $(window).scroll(function() {
   obj.scrollDistance = $(window)?.scrollTop();
 
   $('.subcategory-items-wrap').each(function(i) {
+    
       if ($(this).position().top <= obj.scrollDistance) {
           $('.menu-list li.active').removeClass('active');
-          $('.menu-list li').eq(i).addClass('active');
+          $('.menu-list li').eq(i+1).addClass('active');
       }
+     
   });
-}).scroll();
+  obj.elementPosition = $('.header-search').offset();
+  if( obj.scrollDistance> obj.elementPosition.top){
+    $('.header-search').css('position','fixed').css('top','0');
+} else {
+  $('.header-search').css('position','static');
 }
+}).scroll();
+// obj.elementPosition = $('.header-search').offset();
+
+// $(window).scroll(function(){
+//   obj.scrollDist = $(window).scrollTop();
+//   alert("sad")
+//         if( obj.scrollDist> obj.elementPosition.top){
+//               $('.header-search').css('position','fixed').css('top','0');
+//         } else {
+//             $('.header-search').css('position','static');
+//         }    
+// });
+}
+
+
 }
