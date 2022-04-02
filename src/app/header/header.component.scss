@@ -1779,7 +1779,7 @@ text-align: center;
           .add-btn-container {
             position: absolute;
             right: 16px;
-            top: 92px;
+            top: 94px;
             width: 88px;
             height: 32px;
             z-index: 1;
@@ -1867,7 +1867,7 @@ text-align: center;
 
           .add-quantity-btn,
           .increment-decrement-btn-container {
-            top: 40px;
+            top: 94px;
             width: 88px;
             height: 32px;
           }
@@ -1897,7 +1897,8 @@ text-align: center;
 
             .add-quantity-btn,
             .increment-decrement-btn-container {
-              position: initial;
+              position: absolute;
+              top: 94px;
             }
           }
         }
@@ -1974,7 +1975,7 @@ text-align: center;
         .increment-decrement-btn-container {
           position: absolute;
           right: 16px;
-          top: 92px;
+          top: 94px;
           width: 88px;
           height: 32px;
           z-index: 1;
@@ -2133,7 +2134,7 @@ text-align: center;
               .price-quantity-container {
                 .add-quantity-btn {
                   position: absolute;
-                  top: 50px;
+                  top: 94px;
                   right: 10px;
                   width: 88px;
                   height: 32px;
@@ -2141,7 +2142,7 @@ text-align: center;
 
                 .add-btn-container {
                   position: absolute;
-                  top: 50px;
+                  top: 94px;
                   right: 10px;
                   width: 88px;
                   height: 32px;
@@ -2262,6 +2263,8 @@ text-align: center;
         .add-quantity-btn,
         .increment-decrement-btn-container {
           position: initial;
+          top: 94px;
+          
         }
       }
 
@@ -2359,6 +2362,7 @@ text-align: center;
         .add-quantity-btn,
         .increment-decrement-btn-container {
           position: initial;
+         
         }
       }
 
@@ -2380,6 +2384,7 @@ text-align: center;
           .add-quantity-btn,
           .increment-decrement-btn-container {
             position: initial;
+            top: 94px;
           }
         }
       }
@@ -2398,6 +2403,7 @@ text-align: center;
         .add-quantity-btn,
         .increment-decrement-btn-container {
           position: initial;
+          top: 94px;
         }
       }
 
@@ -2422,6 +2428,7 @@ text-align: center;
           .add-quantity-btn,
           .increment-decrement-btn-container {
             position: initial;
+            top: 94px;
           }
         }
       }
@@ -2437,11 +2444,13 @@ text-align: center;
         position: absolute;
         right: 5px;
 
-        .product-image {
-          width: 80px;
-          height: 68px;
-          object-fit: cover;
+          .product-image {
+            object-fit: cover;
+            max-height: 100%;
+            width: 100%;
+            border-radius: 6px;
         }
+        
       }
     }
 
