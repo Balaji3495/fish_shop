@@ -163,6 +163,9 @@ body {
   .fa-caret-down:before {
     content: "\f0d8";
   }
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
   
   /*End to load fontawsome library*/
   // html {

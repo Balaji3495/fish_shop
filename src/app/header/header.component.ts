@@ -86,23 +86,23 @@ $(window).scroll(function() {
 
 
 
-$(window).on('wheel', function(event){
-// $(window).mousewheel(function(){
+// $(window).on('wheel', function(event){
+// // $(window).mousewheel(function(){
   
-  obj.sticky = $('.header-search'),
-     obj.scroll = $(window).scrollTop();
+//   obj.sticky = $('.header-search'),
+//      obj.scroll = $(window).scrollTop();
 
-  if (obj.scroll > -100) 
-  {
-   // $(".header-search").css( {"position":'fixed'});
-    obj.sticky.addClass('fixed');
+//   if (obj.scroll > -100) 
+//   {
+//    // $(".header-search").css( {"position":'fixed'});
+//     obj.sticky.addClass('fixed');
 
-  }
-  else {
-    alert("anu");
-    obj.sticky.removeClass('fixed');
-  }
-});
+//   }
+//   else {
+//     alert("anu");
+//     obj.sticky.removeClass('fixed');
+//   }
+// });
 
 }
 showData()

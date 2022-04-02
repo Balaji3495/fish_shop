@@ -5,6 +5,7 @@
 @import "../../assets/css/side.scss";
 
 
+
 html .md-sbg
 {
   background: #000!important;
@@ -12,6 +13,7 @@ html .md-sbg
     background-color: #000!important;
     background-color: #6582af!important;
 }
+
 
 .header-block-wrap.banners[_ngcontent-ksc-c16] {
   background-position-x: 100%;
@@ -530,10 +532,10 @@ text-align: center;
 
 
 
-.header-search
-{
-  visibility: hidden;
-}
+// .header-search
+// {
+//   visibility: hidden;
+// }
 @media screen and (min-width: 768px) {
  
   .webiste-catalog-cart-view {
@@ -650,10 +652,7 @@ text-align: center;
   .webiste-catalog-cart-view {
     display: none;
   }
-  .header-search
-  {
-    visibility: visible;
-  }
+
 }
 .website-menu-wrapper {
   display: flex;
@@ -5264,7 +5263,7 @@ body.default.ReactModal__Body--open *,
     display: flex;
     flex-direction: row;
     padding: 30px 10%;
-    width: 98vw;
+    width: 100vw;
     justify-content: space-between;
   }
 
