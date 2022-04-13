@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { CartComponent } from './cart/cart.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    CarouselComponent
+    CarouselComponent,
+    CartComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
