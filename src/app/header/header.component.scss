@@ -108,7 +108,7 @@ html .md-sbg
     z-index: 12;
     position: absolute;
     box-shadow: 0px 3px 6px #00000029;
-  
+
     .website-main-header {
       min-width: 1200px;
       display: flex;
@@ -116,12 +116,12 @@ html .md-sbg
       justify-content: space-between;
       // margin-left: 20px;
       align-items: center;
-  
+
       .brand-logo-container {
         padding: 2px;
         max-width: 240px;
         min-width: 240px;
-  
+
         img {
           max-width: 120px;
           max-height: 60px;
@@ -129,14 +129,14 @@ html .md-sbg
           border-radius: 50%;
         }
       }
-  
+
       .location-address-container {
         display: flex;
         flex-direction: column;
         // margin-right: 120px;
         max-width: 530px;
         min-width: 530px;
-  
+
         .location-container {
           width: 520px;
           height: 48px;
@@ -145,10 +145,10 @@ html .md-sbg
           display: flex;
           flex-direction: row;
           justify-content: flex-start;
-  
+
           .service-cta {
             position: relative;
-  
+
             .menu-type-main-container {
               .menu-type-chip-container {
                 background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -160,7 +160,7 @@ html .md-sbg
                 padding-bottom: 8px;
                 max-width: 120px;
                 min-width: 120px;
-  
+
                 .menu-option {
                   padding-left: 24px;
                   padding-right: 24px;
@@ -172,7 +172,7 @@ html .md-sbg
               }
             }
           }
-  
+
           .location-wrapper {
             padding: 16px 24px;
             display: flex;
@@ -180,13 +180,13 @@ html .md-sbg
             margin-left: 110px;
             margin-right: auto;
             width: -webkit-fill-available;
-  
+
             img {
               width: 16px;
               height: 16px;
               margin-right: 4px;
             }
-  
+
             .address-wrapper {
               width: 90%;
               white-space: pre;
@@ -209,25 +209,25 @@ text-align: center;
     width: 100%;
     z-index: 11;
     box-shadow: 0px 3px 6px #00000029;
-  
+
     .website-fixed-container {
       min-width: 1200px;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-  
+
       .logo-name-wrapper {
         display: flex;
         flex-direction: row;
         align-items: center;
         min-width: 240px;
         max-width: 240px;
-  
-  
+
+
         .brand-logo-container {
           padding: 2px;
-  
+
           img {
             object-fit: contain;
             max-width: 60px;
@@ -235,32 +235,32 @@ text-align: center;
           }
         }
       }
-  
+
       .website-search-bar {
         display: flex;
         flex-direction: row;
         align-items: center;
         max-width: 530px;
         min-width: 530px;
-  
+
         .header.header-search {
           width: 420px;
           z-index: 49;
           top: 0;
           padding: 11px 16px 11px;
-  
+
           img {
             height: 14px;
             width: 14px;
           }
-  
+
           &.fixed {
             position: fixed;
             top: 0;
             background-color: #fff;
             box-shadow: 0 0 10px 0 #d9d9d9;
           }
-  
+
           span {
             border: 0.3px solid #ebebeb;
             padding: 11px 12px 10px 16px;
@@ -277,23 +277,23 @@ text-align: center;
             background: #fff;
             align-items: center;
             box-shadow: 0px 1px 3px #00000029;
-  
+
             i {
               margin-bottom: 3px;
               font-size: 16px;
               color: #7F7F7F;
             }
-  
+
             img {
               margin-right: 12px;
               margin-bottom: 1px;
             }
           }
         }
-  
+
         .veg-non-veg-website {
           background: #ffffff;
-  
+
           #toggleSwitch {
             margin-top: 0px !important;
             box-shadow: 0px 1px 3px #00000014;
@@ -304,7 +304,7 @@ text-align: center;
             padding-bottom: 3px;
             display: flex !important;
             align-items: center;
-  
+
             .toggle-title {
               width: 48px;
               margin-bottom: 5px;
@@ -312,20 +312,20 @@ text-align: center;
           }
         }
       }
-  
+
       .dummy-div {
         min-width: 356px;
         max-width: 356px;
       }
-  
+
     }
   }
-  
+
   .store-location-container-web {
     min-width: 356px;
     max-width: 356px;
     text-align: right;
-  
+
     .store-heading {
       text-align: right;
       color: #000000;
@@ -517,11 +517,11 @@ text-align: center;
   }
   input[type="checkbox"]:checked + label {
     background-color:rgba(50, 186, 50, 0.26);
-  } 
+  }
 
   input[type="checkbox"]:checked + label:after {
     background-color: green;
-  } 
+  }
 }
 @media screen and (max-width: 750px){
 // #root{
@@ -543,7 +543,7 @@ text-align: center;
 //   visibility: hidden;
 // }
 @media screen and (min-width: 768px) {
- 
+
   .webiste-catalog-cart-view {
     min-width: 356px;
     max-width: 356px;
@@ -2285,7 +2285,7 @@ text-align: center;
         .increment-decrement-btn-container {
           position: initial;
           top: 94px;
-          
+
         }
       }
 
@@ -2383,7 +2383,7 @@ text-align: center;
         .add-quantity-btn,
         .increment-decrement-btn-container {
           position: initial;
-         
+
         }
       }
 
@@ -2471,7 +2471,7 @@ text-align: center;
             width: 100%;
             border-radius: 6px;
         }
-        
+
       }
     }
 
@@ -5360,7 +5360,7 @@ body.default.ReactModal__Body--open *,
   }
 }
 a {
- 
+
   color: #696f76;
   text-decoration: none;
 }
@@ -6248,7 +6248,7 @@ a {
   .user-address {
     margin-bottom: 10px;
   }
-  
+
   .referral-banner-chip-view-container {
     margin: 10px 16px 0px 16px !important;
   }
@@ -6507,7 +6507,6 @@ px
   position: relative;
 }
 [class*=" icon-"], [class^=icon-] {
-  font-family: icomoon;
   speak: none;
   font-style: normal;
   font-weight: 400;
