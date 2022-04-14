@@ -8,7 +8,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { CartComponent } from './cart/cart.component';
 import { MapComponent } from './map/map.component';
-
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +23,8 @@ import { MapComponent } from './map/map.component';
     NgbModule
     
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers:[{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }

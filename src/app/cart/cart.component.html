@@ -4,207 +4,227 @@
 
 
     <div>
-            <div class="catalog-header-wrapper">
-                <div class="back-button">
-                    <i class="fa fa-angle-left md-mr10"></i>Back to menu</div>
-                <div class="logo-wrap">
-                       
-                    <img alt="" class="logo-image" src="../../assets/img/logo ff.jpg">
+        <div class="catalog-header-wrapper">
+            <div class="back-button">
+                <i class="fa fa-angle-left md-mr10"></i>Back to menu</div>
+            <div class="logo-wrap">
+                   
+                <img alt="" class="logo-image" src="../../assets/img/logo ff.jpg">
+            </div>
+            <div class="merchant-name-wrapper">
+                <div class="merchant-name primary-cta md-f700 md-text32 md-ml10"></div>
+                <div class="change-store-wrapper primary-cta md-f500 md-text14 md-ml10 md-mt5">
+                    <img class="store-icon icon md-mr5" src="//cdn.dotpe.in/cfe/image/ic-store.svg">
                 </div>
-                <div class="merchant-name-wrapper">
-                    <div class="merchant-name primary-cta md-f700 md-text32 md-ml10"></div>
-                    <div class="change-store-wrapper primary-cta md-f500 md-text14 md-ml10 md-mt5">
-                        <img class="store-icon icon md-mr5" src="//cdn.dotpe.in/cfe/image/ic-store.svg">
+            </div>
+        </div>
+        <div class="main-body-container">
+            <div class="actions-wrapper">
+                <div class="number-verification-wrapper">
+                    <div class="user-details-wrapper">
+                        <img src="//cdn.dotpe.in/cfe/image/user-details.png" class="black-image-pin icon">
+                    </div>
+                    <i class="fa fa-check-circle check-icon"></i>
+                    <div class="number-verified-container">
+                        <span class="heading md-ml20">Your Details</span>
+                        <div class="number-container md-mt10 md-ml20">
+                            <span class="md-text16 md-f700">9042611793</span>
+                            <!-- <button class="change-number-btn md-ml10" (click)="triggerModal(modalData)">change     <i class="fa fa-pen"></i></button> -->
+
+                            <!-- <button class="change-number-btn md-ml10">change
+                                <i class="fa fa-pen"></i>
+                            </button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="address-main-wrapper">
+                    <div class="address-details">
+                        <img src="//cdn.dotpe.in/cfe/image/delivery-location.png" class="black-image-pin icon">
+                    </div>
+                    <i class="fa fa-check-circle check-icon"></i>
+                    <div class="address-website-container ">
+                        <div class="address-main-body">
+                            <div>
+                                <div class="complete-address-wrapper md-mt10">
+                                    <div class="md-text14 md-f500 md-mb12 md-c646464">Delivery Address</div>
+                                    <div class="complete-address">
+                                        <span class="addres md-text20 md-f400 md-c030303">4/436, 4 block, home</span>
+                                        <button class="change-number-btn md-ml10">change
+                                            <i class="fa fa-pen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-main-wrapper">
+                    <div class="payment-icon">
+                        <img src="//cdn.dotpe.in/cfe/image/wallet.svg" class="black-image-pin icon">
+                    </div>
+                    <div class="payment-container">
+                        <div class="payment-main-body">
+                            <div class="payment-modal ">
+                                <div class="payment-title-header">
+                                    <div class="payment-amount">
+                                        <div class="md-text24 md-f700 md-pb20">Select a payment method</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <ul class="payment-option-container">
+                                        <li id="payment-method-card" class="payment-item-wrapper card">
+                                            <div class="logo">
+                                                <img src="//cdn.dotpe.in/cfe/image/card.png" alt="card">
+                                            </div>
+                                            <div class="payment-method">card</div>
+                                        </li>
+                                        <li id="payment-method-mobikwik" class="payment-item-wrapper mobikwik">
+                                            <div class="logo">
+                                                <img src="//cdn.dotpe.in/cfe/image/mobikwik.png" alt="mobikwik">
+                                            </div>
+                                            <div class="payment-method">mobikwik</div>
+                                        </li>
+                                        <li id="payment-method-lazyPay" class="payment-item-wrapper lazyPay">
+                                            <div class="logo">
+                                                <img src="//cdn.dotpe.in/cfe/image/lazyPay.png" alt="lazyPay">
+                                            </div>
+                                            <div class="payment-method">lazyPay</div>
+                                        </li>
+                                        <li id="payment-method-paytm" class="payment-item-wrapper paytm">
+                                            <div class="logo">
+                                                <img src="//cdn.dotpe.in/cfe/image/paytm.png" alt="paytm">
+                                            </div>
+                                            <div class="payment-method">paytm</div>
+                                        </li>
+                                        <li id="payment-method-simpl" class="payment-item-wrapper simpl">
+                                            <div class="logo">
+                                                <img src="//cdn.dotpe.in/cfe/image/simpl.png" alt="simpl">
+                                            </div>
+                                            <div class="payment-method">simpl</div>
+                                        </li>
+                                        <li id="payment-method-googlepay" class="payment-item-wrapper googlepay upi-card">
+                                            <div class="logo">
+                                                <img src="//cdn.dotpe.in/cfe/image/googlepay.png" alt="googlepay">
+                                            </div>
+                                            <div class="payment-method">Google Pay</div>
+                                        </li>
+                                        <li id="payment-method-phonepe" class="payment-item-wrapper phonepe upi-card">
+                                            <div class="logo">
+                                                <img src="//cdn.dotpe.in/cfe/image/phonepe.png" alt="phonepe">
+                                            </div>
+                                            <div class="payment-method">PhonePe</div>
+                                        </li>
+                                        <li id="payment-method-payzapp" class="payment-item-wrapper payzapp">
+                                            <div class="logo">
+                                                <img src="//cdn.dotpe.in/cfe/image/payzapp.png" alt="payzapp">
+                                            </div>
+                                            <div class="payment-method">payZapp</div>
+                                        </li>
+                                        <li id="payment-method-airtel" class="payment-item-wrapper airtel">
+                                            <div class="logo">
+                                                <img src="//cdn.dotpe.in/cfe/image/airtel.png" alt="airtel">
+                                            </div>
+                                            <div class="payment-method">airtel</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="main-body-container">
-                <div class="actions-wrapper">
-                    <div class="number-verification-wrapper">
-                        <div class="user-details-wrapper">
-                            <img src="//cdn.dotpe.in/cfe/image/user-details.png" class="black-image-pin icon">
-                        </div>
-                        <i class="fa fa-check-circle check-icon"></i>
-                        <div class="number-verified-container">
-                            <span class="heading md-ml20">Your Details</span>
-                            <div class="number-container md-mt10 md-ml20">
-                                <span class="md-text16 md-f700">9042611793</span>
-                                <button class="change-number-btn md-ml10">change
-                                    <i class="fa fa-pen"></i>
-                                </button>
-                            </div>
-                        </div>
+            <div class="cart-wrapper">
+                <div class="cart-section">
+                    <div class="cart-heading">
+                        <span class="cart-item-text md-text23 md-f600 md-mb10">1 Item in Cart</span>
                     </div>
-                    <div class="address-main-wrapper">
-                        <div class="address-details">
-                            <img src="//cdn.dotpe.in/cfe/image/delivery-location.png" class="black-image-pin icon">
-                        </div>
-                        <i class="fa fa-check-circle check-icon"></i>
-                        <div class="address-website-container ">
-                            <div class="address-main-body">
-                                <div>
-                                    <div class="complete-address-wrapper md-mt10">
-                                        <div class="md-text14 md-f500 md-mb12 md-c646464">Delivery Address</div>
-                                        <div class="complete-address">
-                                            <span class="addres md-text20 md-f400 md-c030303">4/436, 4 block, home</span>
-                                            <button class="change-number-btn md-ml10">change
-                                                <i class="fa fa-pen"></i>
-                                            </button>
+                    <div class="cart-item-wrapper">
+                        <div class="single-cart-data">
+                            <div class="store-menu-product-item-wrap   ">
+                                <div class="store-image-social-icon-wrapper">
+                                    <div class="social-proofing-wrapper"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="details">
+                                        <span class="title md-text16 md-f500">Mexican Beans &amp; Greens Salad</span>
+                                        <div class="add-btn-container   ">
+                                            <div class="increment-decrement-btn-container">
+                                                <div class="md-pc">
+                                                    <i class="fa fa-minus"></i>
+                                                </div>
+                                                <div class="md-pc md-text13 md-f700 cart-quantity-text">1</div>
+                                                <div class="md-pc">
+                                                    <i class="fa fa-plus"></i>
+                                                </div>
+                                            </div>
+                                            <div class="custmisable-btn md-text10 md-c727272">customizable</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-description md-text12 md-f600 md-c9ea6b9 item-selected-variants"></div>
+                                    <div class="price-quantity-container">
+                                        <div class="price md-text13 md-f600 ">
+                                            <span class="price md-text13 md-f600 md-c000000">₹ 375</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="payment-main-wrapper">
-                        <div class="payment-icon">
-                            <img src="//cdn.dotpe.in/cfe/image/wallet.svg" class="black-image-pin icon">
-                        </div>
-                        <div class="payment-container">
-                            <div class="payment-main-body">
-                                <div class="payment-modal ">
-                                    <div class="payment-title-header">
-                                        <div class="payment-amount">
-                                            <div class="md-text24 md-f700 md-pb20">Select a payment method</div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <ul class="payment-option-container">
-                                            <li id="payment-method-card" class="payment-item-wrapper card">
-                                                <div class="logo">
-                                                    <img src="//cdn.dotpe.in/cfe/image/card.png" alt="card">
-                                                </div>
-                                                <div class="payment-method">card</div>
-                                            </li>
-                                            <li id="payment-method-mobikwik" class="payment-item-wrapper mobikwik">
-                                                <div class="logo">
-                                                    <img src="//cdn.dotpe.in/cfe/image/mobikwik.png" alt="mobikwik">
-                                                </div>
-                                                <div class="payment-method">mobikwik</div>
-                                            </li>
-                                            <li id="payment-method-lazyPay" class="payment-item-wrapper lazyPay">
-                                                <div class="logo">
-                                                    <img src="//cdn.dotpe.in/cfe/image/lazyPay.png" alt="lazyPay">
-                                                </div>
-                                                <div class="payment-method">lazyPay</div>
-                                            </li>
-                                            <li id="payment-method-paytm" class="payment-item-wrapper paytm">
-                                                <div class="logo">
-                                                    <img src="//cdn.dotpe.in/cfe/image/paytm.png" alt="paytm">
-                                                </div>
-                                                <div class="payment-method">paytm</div>
-                                            </li>
-                                            <li id="payment-method-simpl" class="payment-item-wrapper simpl">
-                                                <div class="logo">
-                                                    <img src="//cdn.dotpe.in/cfe/image/simpl.png" alt="simpl">
-                                                </div>
-                                                <div class="payment-method">simpl</div>
-                                            </li>
-                                            <li id="payment-method-googlepay" class="payment-item-wrapper googlepay upi-card">
-                                                <div class="logo">
-                                                    <img src="//cdn.dotpe.in/cfe/image/googlepay.png" alt="googlepay">
-                                                </div>
-                                                <div class="payment-method">Google Pay</div>
-                                            </li>
-                                            <li id="payment-method-phonepe" class="payment-item-wrapper phonepe upi-card">
-                                                <div class="logo">
-                                                    <img src="//cdn.dotpe.in/cfe/image/phonepe.png" alt="phonepe">
-                                                </div>
-                                                <div class="payment-method">PhonePe</div>
-                                            </li>
-                                            <li id="payment-method-payzapp" class="payment-item-wrapper payzapp">
-                                                <div class="logo">
-                                                    <img src="//cdn.dotpe.in/cfe/image/payzapp.png" alt="payzapp">
-                                                </div>
-                                                <div class="payment-method">payZapp</div>
-                                            </li>
-                                            <li id="payment-method-airtel" class="payment-item-wrapper airtel">
-                                                <div class="logo">
-                                                    <img src="//cdn.dotpe.in/cfe/image/airtel.png" alt="airtel">
-                                                </div>
-                                                <div class="payment-method">airtel</div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                            <div class="menu-item-description-container postpaid-description  ">
+                                <span class="menu-item-description md-c535e65 md-ml15 md-f500 md-text12" id="1681876-item-postpaid-description">House Mix Lettuce, Smashed Tortilla, Avocado, Garlic Sour Cream, Sweet Chilli Salsa Dressing</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="cart-wrapper">
-                    <div class="cart-section">
-                        <div class="cart-heading">
-                            <span class="cart-item-text md-text23 md-f600 md-mb10">1 Item in Cart</span>
+                <div class="promotion-section">
+                    <div class="promotion-container md-mb5 md-text14 ">
+                        <img src="//cdn.dotpe.in/cfe/image/promo-success-icon.svg" class="md-mr5"> APPLY PROMO CODE</div>
+                    <span></span>
+                </div>
+                <div></div>
+                <div class="bill-section">
+                    <span class="md-text14 md-mt20 md-f700">Bill Details</span>
+                    <div class="price-detail">
+                        <div class="price-wrapper md-mt10">
+                            <div>Item Total</div>
+                            <div>₹ 375.00</div>
                         </div>
-                        <div class="cart-item-wrapper">
-                            <div class="single-cart-data">
-                                <div class="store-menu-product-item-wrap   ">
-                                    <div class="store-image-social-icon-wrapper">
-                                        <div class="social-proofing-wrapper"></div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="details">
-                                            <span class="title md-text16 md-f500">Mexican Beans &amp; Greens Salad</span>
-                                            <div class="add-btn-container   ">
-                                                <div class="increment-decrement-btn-container">
-                                                    <div class="md-pc">
-                                                        <i class="fa fa-minus"></i>
-                                                    </div>
-                                                    <div class="md-pc md-text13 md-f700 cart-quantity-text">1</div>
-                                                    <div class="md-pc">
-                                                        <i class="fa fa-plus"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="custmisable-btn md-text10 md-c727272">customizable</div>
-                                            </div>
-                                        </div>
-                                        <div class="item-description md-text12 md-f600 md-c9ea6b9 item-selected-variants"></div>
-                                        <div class="price-quantity-container">
-                                            <div class="price md-text13 md-f600 ">
-                                                <span class="price md-text13 md-f600 md-c000000">₹ 375</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="menu-item-description-container postpaid-description  ">
-                                    <span class="menu-item-description md-c535e65 md-ml15 md-f500 md-text12" id="1681876-item-postpaid-description">House Mix Lettuce, Smashed Tortilla, Avocado, Garlic Sour Cream, Sweet Chilli Salsa Dressing</span>
-                                </div>
-                            </div>
+                        <div class="price-wrapper md-mt10">
+                            <div>Delivery Fee</div>
+                            <div>₹ 100.00</div>
+                        </div>
+                        <div class="price-wrapper md-mt10">
+                            <div>Packaging Fee</div>
+                            <div>₹ 18.75</div>
+                        </div>
+                        <div class="price-wrapper md-mt10">
+                            <div>Tax &amp; other charges</div>
+                            <div>₹ 36.76</div>
                         </div>
                     </div>
-                    <div class="promotion-section">
-                        <div class="promotion-container md-mb5 md-text14 ">
-                            <img src="//cdn.dotpe.in/cfe/image/promo-success-icon.svg" class="md-mr5"> APPLY PROMO CODE</div>
-                        <span></span>
-                    </div>
-                    <div></div>
-                    <div class="bill-section">
-                        <span class="md-text14 md-mt20 md-f700">Bill Details</span>
-                        <div class="price-detail">
-                            <div class="price-wrapper md-mt10">
-                                <div>Item Total</div>
-                                <div>₹ 375.00</div>
-                            </div>
-                            <div class="price-wrapper md-mt10">
-                                <div>Delivery Fee</div>
-                                <div>₹ 100.00</div>
-                            </div>
-                            <div class="price-wrapper md-mt10">
-                                <div>Packaging Fee</div>
-                                <div>₹ 18.75</div>
-                            </div>
-                            <div class="price-wrapper md-mt10">
-                                <div>Tax &amp; other charges</div>
-                                <div>₹ 36.76</div>
-                            </div>
-                        </div>
-                        <div class="total-pay-wrapper md-mt10">
-                            <div class="price-wrapper">
-                                <div class="md-text16 md-f700">To Pay</div>
-                                <div class="md-text16 md-f700">₹ 530.51</div>
-                            </div>
+                    <div class="total-pay-wrapper md-mt10">
+                        <div class="price-wrapper">
+                            <div class="md-text16 md-f700">To Pay</div>
+                            <div class="md-text16 md-f700">₹ 530.51</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- <ng-template #modalData let-modal>
+            <div class="modal-header">
+              <h4 class="modal-title" id="modal-basic-title">Angular Bootstrap Modal Popup</h4>
+              <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Are you sure you want to delete <span class="text-primary">"Agatha Harkness"</span> profile?</strong></p>
+              
+              <p>All data related to west view profile will be removed permanently.
+              </p>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-danger" (click)="modal.close('Save click')">Close</button> 
+            </div>
+          </ng-template> -->

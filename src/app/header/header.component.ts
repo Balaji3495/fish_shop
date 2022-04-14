@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import * as $ from "jquery";
+import { RouterModule, Routes, Router } from '@angular/router';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -11,7 +12,7 @@ export class HeaderComponent implements OnInit {
   scroll: any;
   menubar: boolean=false;
 
-  constructor() { }
+  constructor(private route:Router) { }
   scrollDistance: any;
   target: any;
   use:any;
@@ -112,5 +113,8 @@ showData()
 closeData()
 {
   this.menubar=false;
+}
+checkout(){
+  this.route.navigate(['/map']);
 }
 }

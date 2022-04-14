@@ -126,6 +126,7 @@ html .md-sbg
           max-width: 120px;
           max-height: 60px;
           object-fit: contain;
+          border-radius: 50%;
         }
       }
   
@@ -230,7 +231,7 @@ text-align: center;
           img {
             object-fit: contain;
             max-width: 60px;
-            max-height: 60px;
+            max-height: 60px;border-radius: 50%;
           }
         }
       }
@@ -706,8 +707,8 @@ text-align: center;
       list-style-type: none;
 
       .active {
-        color:#007a60  !important;
-        border-left: 3px solid #007a60 ;
+        color:#143b96  !important;
+        border-left: 3px solid #143b96 ;
         font-weight: 700;
         border-radius: 1px;
       }
@@ -1198,7 +1199,7 @@ text-align: center;
       }
 
       .food-type-icon-conatiner {
-        border: 1px solid #4caf50;
+        border: 1px solid #cb202d;
         width: 12px;
         height: 12px;
         display: flex;
@@ -1234,7 +1235,7 @@ text-align: center;
 
         .food-icon {
           border-radius: 50%;
-          background: #4caf50;
+          background: #954324;
           width: 6px;
           height: 6px;
         }
@@ -1402,7 +1403,7 @@ text-align: center;
       }
 
       .best-item-type {
-        border: 1px solid #4caf50;
+        border: 1px solid #143b96;
         width: 12px;
         height: 12px;
         display: flex;
@@ -2045,7 +2046,7 @@ text-align: center;
         }
 
         .best-item-type {
-          border: 1px solid #4caf50;
+          border: 1px solid #143b96;
           width: 12px;
           height: 12px;
           display: flex;
@@ -2541,7 +2542,7 @@ text-align: center;
 }
 
 .food-type-icon-conatiner {
-  border: 1px solid #4caf50;
+  border: 1px solid #cb202d;
   width: 12px;
   height: 12px;
   display: flex;
@@ -2576,7 +2577,7 @@ text-align: center;
 
   .food-icon {
     border-radius: 50%;
-    background: #4caf50;
+    background: #f30000;
     width: 6px;
     height: 6px;
   }
@@ -5423,7 +5424,7 @@ a {
   }
 
   .food-type-icon-conatiner {
-    border: 1px solid #4caf50;
+    border: 1px solid #cb202d;
     width: 12px;
     height: 12px;
     display: flex;
@@ -5459,7 +5460,7 @@ a {
 
     .food-icon {
       border-radius: 50%;
-      background: #4caf50;
+      background: #ff0f0f;
       width: 6px;
       height: 6px;
     }
@@ -6544,7 +6545,7 @@ px
   height: 30px;
   width: 83px;
   border: 1px solid #d4d5d9;
-  color: #60b246;
+  color: #143b96;
   font-size: .9rem;
   font-weight: 600;
   line-height: 30px;
@@ -6592,7 +6593,7 @@ px
   display: inline-block;
   height: 2px;
   width: 10px;
-  background-color: #bebfc5;
+  background-color: #143b96;
   position: relative;
   top: -6px;
 }
@@ -6672,7 +6673,7 @@ px
 }
 ._1gPB7 {
   height: 50px;
-  background-color: #60b246;
+  background-color: #143b96;
   outline: 0;
   cursor: pointer;
   border: 0;

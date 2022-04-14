@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from 'src/app/header/header.component';
 import { MapComponent } from './map/map.component';
 import { CartComponent } from 'src/app/cart/cart.component';
+
 const routes: Routes = [
   {
     path: '',
